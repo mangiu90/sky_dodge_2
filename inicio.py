@@ -1,7 +1,7 @@
 import pygame
 
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 1000
+SCREEN_WIDTH = 1800
+SCREEN_HEIGHT = 500
 FPS_NUMBER = 60
 PATH = "sky_dodge_2/"
 
@@ -9,6 +9,8 @@ PATH = "sky_dodge_2/"
 
 def run_game(width, height, fps, starting_scene):
     pygame.init()
+    pygame.mixer.init()
+    pygame.display.set_caption('Sky Dodge 2')
     screen = pygame.display.set_mode((width, height))
     clock = pygame.time.Clock()
 
